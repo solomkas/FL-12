@@ -1,0 +1,182 @@
+body {
+  width: auto;
+  background: #ffffff;
+  margin: 0 auto; }
+  body header.header {
+    background: url("../img/m-h-day.jpg");
+    width: 100%;
+    height: 750px;
+    background-color: #2d2726;
+    border-bottom-right-radius: 450px 220px;
+    overflow: auto;
+    margin: 0; }
+
+div.header-wrap {
+  width: 45%;
+  padding: 10px 100px; }
+  div.header-wrap p.header_text {
+    font-family: 'Hind', sans-serif;
+    color: #2d2726;
+    margin-bottom: 50px; }
+  div.header-wrap div {
+    display: table;
+    font-family: 'Hind', sans-serif; }
+    div.header-wrap div button.header_button {
+      background-color: #6D9608;
+      border: none;
+      color: white;
+      padding: 12px 40px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0 2px 14px;
+      cursor: pointer;
+      border-radius: 3px;
+      font-weight: bold;
+      display: table-cell;
+      vertical-align: middle; }
+    div.header-wrap div a.login {
+      padding-left: 80px;
+      color: white;
+      vertical-align: middle;
+      display: table-cell;
+      vertical-align: middle;
+      font-weight: bold; }
+
+div.landing-logo p, div.landing-logo.footer_logo p {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 5px;
+  display: inline-block; }
+  div.landing-logo p span.hiking {
+    display: block;
+    text-transform: lowercase;
+    font-size: 12px;
+    text-align: center; }
+    div.landing-logo p span.hiking ::before {
+      content: attr(data-text);
+      padding: 1px 8px; }
+div.landing-logo img, div.landing-logo.footer_logo img {
+  height: 45px;
+  float: left;
+  margin: 0 10px; }
+div.landing-logo.footer_logo {
+  display: inherit;
+  width: 20%;
+  color: #bab7b7; }
+
+p.header_heading {
+  color: #2d2726;
+  font-family: 'Hind', sans-serif;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1em; }
+  p.header_heading span.awesome {
+    background-color: #3E9AA9;
+    display: inline-block;
+    height: 50px; }
+
+main {
+  margin: 0 auto;
+  width: 960px;
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  z-index: 10; }
+  main p.section_text {
+    text-align: center;
+    color: #2d2726;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 50px; }
+  main span.adventure {
+    background-color: #3E9AA9;
+    display: inline-block;
+    height: 40px; }
+
+div.section_card_wrap {
+  margin-bottom: 80px; }
+  div.section_card_wrap div.section_card {
+    background-color: #22232F;
+    margin: 0 30px 20px;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-flex; }
+    div.section_card_wrap div.section_card img.section_card_img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      margin-right: 5px; }
+    div.section_card_wrap div.section_card div.section_card_right_container {
+      margin: 20px 60px;
+      font-family: "Source Sans Pro", sans-serif;
+      display: inline-grid; }
+      div.section_card_wrap div.section_card div.section_card_right_container p.section_card_heading {
+        text-align: center;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 500;
+        margin: 15px 0; }
+      div.section_card_wrap div.section_card div.section_card_right_container p.section_card_text {
+        text-align: justify;
+        color: #bab7b7;
+        font-size: 14px; }
+      div.section_card_wrap div.section_card div.section_card_right_container a.section_link {
+        text-align: center;
+        color: #bab7b7;
+        font-size: 14px; }
+
+div.section_banner {
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
+  background: linear-gradient(90deg, #6D9608 0%, #30518E 100%);
+  border-radius: 5px;
+  padding: 0 100px; }
+  div.section_banner div.section_banner_text_wrap {
+    margin: 10px 260px 30px 30px;
+    display: inline-block; }
+    div.section_banner div.section_banner_text_wrap p.section_banner_heading {
+      font-weight: bold;
+      font-size: 20px;
+      color: #2d2726; }
+      div.section_banner div.section_banner_text_wrap p.section_banner_heading span.start {
+        background-color: #3E9AA9;
+        display: inline-block;
+        height: 40px;
+        line-height: 50px; }
+    div.section_banner div.section_banner_text_wrap p.section_banner_text {
+      font-size: 12px;
+      color: #bab7b7; }
+  div.section_banner button.section_banner_button {
+    background-color: #6D9608;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 2px 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle; }
+
+footer.footer {
+  background-color: #22232F;
+  color: #bab7b7;
+  margin-top: -60px;
+  padding: 100px 50px 30px; }
+  footer.footer div.footer-wrap {
+    display: inline-flex;
+    padding: 10px;
+    width: 100%; }
+    footer.footer div.footer-wrap p.footer_text {
+      width: 30%;
+      padding: 0 55px;
+      margin: auto;
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: left;
+      vertical-align: middle; }
+    footer.footer div.footer-wrap span.footer-cr {
+      font-family: "Source Sans Pro", sans-serif;
+      padding: 0 50px; }
