@@ -7,7 +7,7 @@ $text-bg: #3E9AA9;
 $box-h-text: #ffffff;
 $box-p-text: #bab7b7;
 $grad-last-color: #30518E;
-$gradient: linear-gradient(90deg, $join-button-color 0%,   $grad-last-color 100%);
+$gradient: linear-gradient(120deg, $join-button-color 0%,   $grad-last-color 100%);
 $main-font: 'Source Sans Pro', sans-serif;
 $fonts:
 ("smallest": 12px,
@@ -16,8 +16,6 @@ $fonts:
 "large": 25px,
 "very-large": 38px,
 "huge": 58px);
-
-
 
 
 @mixin join-button {
@@ -49,7 +47,7 @@ $fonts:
 @mixin span-hiking {
     @include landing-logo-p;
     
-    span.hiking
+    span
             {
                 display: block;
                  text-transform: lowercase;

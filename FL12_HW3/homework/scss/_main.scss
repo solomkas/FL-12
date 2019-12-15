@@ -8,12 +8,13 @@ body
     
     header.header { 
         background: $header-img-url;
-        width: 100%;
-        height: 750px;
-        background-color: $maincolor;
+        background-position:center;
+        background-size: cover;
+        height: 550px;
         border-bottom-right-radius: 450px 220px;
         overflow: auto;
         margin: 0;
+        position: relative;
         
     }
     
@@ -21,7 +22,7 @@ body
 }
 div.header-wrap
     {  
-        width: 45%;
+        width: 38%;
         padding: 10px 100px;
         
        
@@ -59,9 +60,11 @@ div.header-wrap
     
 div.landing-logo 
     {
+        
         p
         {
             @include img-logo;
+           
         }
         
         img 
@@ -71,33 +74,44 @@ div.landing-logo
             margin: 0 10px;
         }
         
-        &.footer_logo
-        {
-            @extend div.landing-logo;
-             display: inherit;
-            width: 20%;
-            color: $box-p-text;
+
+            
+           
+            
         }
         
-    }
+
 
     
 p.header_heading
 {
+  
     color: $maincolor;
     font-family: 'Hind', sans-serif;
     font-size: map-get($fonts, huge);
     font-weight: 800;
     line-height: 1em;
+    z-index: 4;
+    position: relative;
+   
     
-    span.awesome
-    {
-        background-color: $text-bg;
-        display:inline-block;
-        height: 50px;
-    }
-
+   &::after
+{
+    @extend p.header_heading;
+    
+    position: absolute;
+    background-color: $text-bg;
+    color:transparent;
+    content: "awesome";
+    z-index: -1;
+    margin-left:-390px;
+ 
 }
+    
+}
+
+
+
 
 main {
     margin: 0 auto;
@@ -113,14 +127,20 @@ main {
         font-size: map-get($fonts, very-large);
         font-weight: 500;
         line-height: 50px;
+        position: relative;
+        font-family: 'Hind', sans-serif;
     }
     
-    span.adventure
-    {
-        background-color: $text-bg;
-        display:inline-block;
-        height: 40px;
-    }
+    p.section_text:after
+{
+    position: absolute;
+    background-color: $text-bg;
+    color:transparent;
+    content: "adventure";
+    z-index: -1;
+    margin-left:-174px;
+ 
+}
 }
 
 
@@ -188,6 +208,8 @@ div.section_banner
     background: $gradient;
     border-radius: 5px;
     padding: 0 100px;
+    position: relative;
+    z-index: 4;
     
     
     div.section_banner_text_wrap
@@ -201,15 +223,21 @@ div.section_banner
             font-weight: bold;
             font-size: map-get($fonts, normal);
             color: $maincolor;
+            position: relative;
+            font-family: 'Hind', sans-serif;
+             }
             
-            span.start
-    {
-        background-color: $text-bg;
-        display:inline-block;
-        height: 40px;
-         line-height: 50px;
-    }
-        }
+          p.section_banner_heading:after
+{
+    position: absolute;
+    background-color: $text-bg;
+    color:transparent;
+    content: "start";
+    z-index: -1;
+    margin-left:-190px;
+ 
+}
+       
         
         p.section_banner_text
         {

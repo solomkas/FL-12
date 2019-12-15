@@ -48,7 +48,7 @@ $fonts:
 @mixin span-hiking {
     @include landing-logo-p;
     
-    span.hiking
+    span
             {
                 display: block;
                  text-transform: lowercase;
