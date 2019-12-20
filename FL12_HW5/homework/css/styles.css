@@ -2,13 +2,13 @@
  * Feel free to change name of colors if you need it
  * Feel free to add new colors if you need it
  */
-:root {
+/*:root {
   --bg-color--dark: #0b192f;
   --bg-color--header: #024161;
   --link: #fff;
   --link--hover: #1f52a4;
   --bg-footer-color: #024161;
-}
+}*/
 
 body {
   font-family: roboto;
@@ -67,7 +67,7 @@ p {
   grid-row-gap: 15px;
 }
 
-navigation {
+.nav-top {
     display: flex;
     
   grid-area: nav;
@@ -88,25 +88,24 @@ navigation {
   color: #C02966;
 }
 
-.list {
-  margin: 0;
+nav.menu {
+    flex-direction: row;
+      margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
+     
   margin-right: 50px;
-  
-}
+    color: #fff;
+  text-decoration: none;
+  }
 
-.list li {
-  padding: 24px 0 ;
-}
 
-.list li:hover {
+nav.menu a:hover {
   background-color: #1f52a4;
 
 }
 
-.list a {
+nav.menu a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -224,7 +223,7 @@ main {
   opacity: 0.25;
   top: 10px;
   right: 15px;
-  font-size: 30;
+  font-size: 30px;
 }
 
 .text-description {
@@ -384,7 +383,7 @@ main {
     margin: 25px 0 55px 0;
   }
 
-  navigation {
+.nav-top {
     flex-direction: column;
     align-items: center;
   }
@@ -411,8 +410,9 @@ main {
     grid-column-gap: 5px;
     grid-row-gap: 20px;
   }
-  ul {
+nav.menu {
     flex-direction: row;
+     
   }
 
   .sidebar_text {
