@@ -1,0 +1,433 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #024161;
+  --link: #fff;
+  --link--hover: #1f52a4;
+  --bg-footer-color: #024161;
+}
+
+body {
+  font-family: roboto;
+  box-sizing: border-box;
+}
+.post-1 {
+	background: #9d27b0;
+}
+.post-2 {
+	background: #9bb800;
+}
+.post-3 {
+	background: #ed5120;
+}
+.post-4 {
+	background: #9d27b0;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+/* Your styles go here */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b192f;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+    font-weight: 100;
+}
+
+
+.container {
+  width: 98%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr 250px;
+  grid-template-areas: 
+                        "nav nav"
+                        "header header"
+                        "main sidebar"
+                        "footer footer";
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+
+navigation {
+    display: flex;
+    
+  grid-area: nav;
+  background-color: #024161;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.logo {
+  font-size: 28px;
+    font-weight: 100;
+  
+  padding-left: 50px;
+}
+
+.blog {
+  color: #C02966;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-right: 50px;
+  
+}
+
+.list li {
+  padding: 24px 0 ;
+}
+
+.list li:hover {
+  background-color: #1f52a4;
+
+}
+
+.list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 25px;
+    font-weight: 100;
+}
+
+.header {
+  grid-area: header;
+  background: url('../img/post0.jpg') no-repeat center 100% / cover;
+   
+}
+
+.header-post {
+  width: 49%;
+  padding: 220px 0 40px 40px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+  
+}
+
+main {
+  grid-area: main;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+}
+
+.article:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+  
+}
+
+.article img {
+  width: 49%;
+}
+
+.article:hover img{
+  opacity: 0.7;
+}
+
+.article:hover .art-title, .article:hover .text-description{
+  opacity: 0.7;
+}
+
+.art-text {
+  padding-right: 20px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.art-title {
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.article:nth-child(1) .art-title::after {
+  content: '07 \A mar';
+  white-space: pre; 
+  position: absolute;
+  opacity: 0.25;
+  top: -10px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.article:nth-child(2) .art-title::after {
+  content: '06 \A mar';
+  white-space: pre; 
+  position: absolute;
+  opacity: 0.25;
+  top: -10px;
+  left: 10px;
+  font-size: 30px;
+}
+
+.article:nth-child(3) .art-title::after {
+  content: '04 \A mar';
+  white-space: pre; 
+  position: absolute;
+  opacity: 0.25;
+  top: -10px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.article:nth-child(4) .art-title::after {
+  content: '01 \A mar';
+  white-space: pre; 
+  position: absolute;
+  opacity: 0.25;
+  top: -10px;
+  left: 10px;
+  font-size: 30px;
+}
+
+.side-description .side-description_text::after {
+  content: '27 \A feb';
+  white-space: pre; 
+  position: absolute;
+  opacity: 0.25;
+  top: 10px;
+  right: 15px;
+  font-size: 30;
+}
+
+.text-description {
+  padding-left: 25px;
+  font-size: 15px;
+  line-height: 1.7em;
+  padding-right: 25px;
+}
+
+.side-description {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.side-description_text {
+  width: 820px;
+}
+
+.side-description .date {
+  display: none;
+}
+
+.art-title {
+  margin-top: 0;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  color: black;
+}
+
+.sidebar_card {
+  background-color: #fff;
+  padding-bottom: 35px;
+  margin-bottom: 20px;
+}
+
+.sidebar_card img {
+  width: 100%;
+}
+
+.sidebar_text {
+  width: 215px;
+  margin: 0 auto;
+}
+
+.sidebar_text_title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+.sidebar_text_description {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #024161;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 25px 30px;
+  font-size: 14px;
+  color: #506C89;
+}
+
+.footer p {
+  margin-bottom: 5px;
+  line-height: 1.5em;
+}
+
+.grids {
+  display: none;
+}
+
+.grids > div {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .article {
+    display: block;
+  }
+
+ 
+
+  .art-title {
+    font-size: 5em;
+  }
+     .article img {
+    width: 100%;
+  }
+
+  .art-text {
+    width: 80%;
+    padding: 35px;
+    text-align: left;
+  }
+
+  .text-description {
+    font-size: 12px;
+  }
+ 
+  .side-description {
+    padding: 30px 50px;
+  }
+
+     .footer {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+  .side-description .side-description_text::after {
+    content: '27 \A feb';
+    white-space: pre; 
+    position: absolute;
+    opacity: 0.25;
+    bottom: 10px;
+    right: 15px;
+    font-size: 38px;
+  }
+
+  .side-description .date {
+    display: block;
+    
+  }
+
+  .side-description_date {
+    font-size: 30px;
+    opacity: 0.4;
+    text-align: center;
+    padding: 45px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    margin-bottom: 35px;
+
+  }
+
+  .grids {
+    display: block;
+    margin: 25px 0 55px 0;
+  }
+
+  navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo .blog {
+    color: #9329AB;
+  }
+
+  .poster {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+  }
+  ul {
+    flex-direction: row;
+  }
+
+  .sidebar_text {
+    width: 600px;
+  }
+
+  .sidebar_text_title {
+    font-size: 3em;
+  }
+
+  .sidebar_text_description {
+    font-size: 1.5em;
+  }
+
+  .poster {
+    height: 500px;
+  }
+}
